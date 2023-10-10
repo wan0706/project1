@@ -18,538 +18,554 @@
         }
 
         * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-
-        body {
-            font-size: 1.5rem;
-            font-family: 'Noto Sans KR', sans-serif;
-        }
-
-        html {
-            font-size: 10px;
-        }
-
-        a {
-            text-decoration: none;
-            color: #000000;
-        }
-
-        li {
-            list-style: none;
-        }
-
-        .section1 {
-            margin: 0 auto;
-           max-width: 1900px;
-            position: relative;
-        }
-
-        .mainImg {
-            max-width: 100%;
-        }
-
-        .mainImg img {
-            width: 100%;
-        }
-
-        .logo {
-            position: absolute;
-            display: flex;
-            top: 20px;
-            width: 100%;
-            margin: 0 auto;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .nav_bg {
-            position: absolute;
-            left: 0;
-            top: 90px;
-            width: 100%;
-        }
-
-        .main {
-            display: flex;
-            position: absolute;
-            top: 20px;
-            width: 400px;
-            margin-left: 70px;
-            padding-top: 10px;
-        }
-
-        .main>li {
-            color: #333;
-            padding-left: 20px;
-            width: 400px;
-            cursor: pointer;
-        }
-
-        .sub {
-            margin-left: -20px;
-        }
-
-        .sub>li {
-            width: 80px;
-            margin: 10px;
-            left: 0;
-        }
-
-        /* 회원가입 */
-        .join {
-            position: absolute;
-            top: 20px;
-            width: 150px;
-            right: 100px;
-            padding: 12px;
-            margin-left: 10px;
-        }
-
-        .join>a {
-            padding-left: 20px;
-        }
-
-        /* 섹션2 */
-        .section2 {
-            margin: 0 auto;
-            max-width: 1900px;
-        }
-
-        .smallBox {
-           
-            display: flex;
-           
-        }
-        
-       
-
-
-        .smallBox img {
-            padding: 30px;
-        }
-
-
-        .smallp {
-            display: flex;
-        }
-
-        .smallp1 {
-            width: 570px;
-            height: 50px;
-            margin-left: 30px;
-            font-size: 2.1rem;
-            border: 1px solid #7c7c7cc4;
-        }
-
-        .smallp1:hover {
-            cursor: pointer;
-            background-color: #999;
-        }
-
-        .smallp1 p {
-            height: 50px;
-            line-height: 50px;
-            width: 100px;
-            cursor: pointer;
-            margin: 0 auto;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .smallp2 {
-            /* display: flex; */
-            margin-left: 60px;
-            width: 570px;
-            height: 50px;
-            font-size: 2.1rem;
-            border: 1px solid #7c7c7cc4;
-        }
-
-        .smallp2:hover {
-            cursor: pointer;
-            background-color: #999;
-        }
-
-        .smallp2 p {
-            height: 50px;
-            line-height: 50px;
-            width: 100px;
-            cursor: pointer;
-            margin: 0 auto;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .smallp3 {
-            /* display: flex; */
-            margin-left: 60px;
-            width: 570px;
-            height: 50px;
-            font-size: 2.1rem;
-            border: 1px solid #7c7c7cc4;
-        }
-
-
-        .smallp3:hover {
-            cursor: pointer;
-            background-color: #999;
-        }
-
-        .smallp3 p {
-            height: 50px;
-            line-height: 50px;
-            width: 100px;
-            cursor: pointer;
-            margin: 0 auto;
-            align-items: center;
-            justify-content: center;
-        }
-
-        /* 섹션3 */
-
-        .section3 {
-            margin: 0 auto;
-            max-width: 1900px;
-        }
-
-
-        .smallBox2 {
-            width: 100%;
-            height: 230px;
-            background-color: #CED1D0;
-            /* opacity: 0.5; */
-            color: #fff;
-            font-size: 2.5rem;
-            font-family: 'SF_HambakSnow';
-            font-weight: 700;
-        }
-
-        .smallBox2 p {
-
-            padding: 80px;
-            margin-top: 45px;
-            justify-content: center;
-            align-items: center;
-
-        }
-
-        /* 섹션4 */
-        .section4 {
-            margin: 0 auto;
-            max-width: 1900px;
-        }
-
-
-        .section4 h1 {
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto;
-            margin-top: 100px;
-            width: 130px;
-            font-size: 3.5rem;
-        }
-
-
-        .smallBox3 {
-            display: flex;
-            /* margin: 50px; */
-            padding: 80px;
-            justify-content: space-between;
-        }
-
-        .smallNew {
-            margin-top: 20px;
-            padding: 5px;
-            font-size: 2.1rem;
-        }
-
-        .smallBox3 img {
-            cursor: pointer;
-        }
-
-
-        .time {
-            display: flex;
-            padding-top: 20px;
-        }
-
-        .time i {
-            font-size: 2.4rem;
-            padding-top: 5px;
-            width: 130px;
-            justify-content: center;
-            align-items: center;
-            height: 40px;
-            border-radius: 20px;
-            color: #fff;
-            position: absolute;
-            background-color: #333;
-            border: 1px solid #333;
-        }
-
-        .time p {
-            margin-left: 80px;
-            height: 40px;
-            padding-left: 60px;
-            font-size: 2.4rem;
-            width: 250px;
-            border-radius: 20px;
-            border: 2px solid rgb(199, 201, 199);
-        }
-
-        /* 섹션5 */
-        .section5 {
-            margin: 0 auto;
-            max-width: 1900px;
-        }
-
-        .smallBox4 {
-            display: flex;
-            justify-content: center;
-            margin: 0 auto;
-        }
-
-        .smallBox4 img {
-            padding: 40px;
-        }
-
-        .smallBox5 p {
-            margin: 0 auto;
-            width: 180px;
-            font-size: 2.5rem;
-        }
-
-        /* 푸터 */
-        .section6 {
-            margin: 0 auto;
-            max-width: 1900px;
-        }
-
-        .footer_span {
-
-            padding: 40px 0px;
-            font-size: 2.1rem;
-            border-bottom: 1px solid #ccc;
-        }
-
-        .footer_span span {
-            margin-left: 25px;
-            /* border: 2px solid red; */
-        }
-
-        .footer_bg img {
-            margin-top: 80px;
-            margin-left: 10px;
-        }
-
-        .footer_span2 {
-            margin-top: 40px;
-
-        }
-
-        .footer_span2 span {
-            margin-left: 10px;
-        }
-
-
-        .footer_span3 {
-            margin-top: 10px;
-            margin-left: 10px;
-        }
-    </style>
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+body {
+font-size: 1.5rem;
+font-family: 'Noto Sans KR', sans-serif;
+}
+
+html {
+font-size: 10px;
+}
+
+a {
+text-decoration: none;
+color: #000000;
+}
+
+li {
+list-style: none;
+}
+
+.section1 {
+margin: 0 auto;
+max-width: 1900px;
+position: relative;
+}
+
+.mainImg {
+max-width: 100%;
+}
+
+.mainImg img {
+width: 100%;
+}
+
+.logo {
+position: absolute;
+display: flex;
+top: 20px;
+width: 100%;
+margin: 0 auto;
+justify-content: center;
+align-items: center;
+}
+
+.nav_bg {
+position: absolute;
+left: 0;
+top: 90px;
+width: 100%;
+}
+
+.main {
+display: flex;
+position: absolute;
+top: 20px;
+width: 400px;
+margin-left: 70px;
+padding-top: 10px;
+}
+
+.main>li {
+color: #333;
+padding-left: 20px;
+width: 400px;
+cursor: pointer;
+}
+
+.sub {
+margin-left: -20px;
+}
+
+.sub>li {
+width: 80px;
+margin: 10px;
+left: 0;
+}
+
+/* 회원가입 */
+.join {
+position: absolute;
+top: 20px;
+width: 150px;
+right: 100px;
+padding: 12px;
+margin-left: 10px;
+}
+
+.join>a {
+padding-left: 20px;
+}
+
+/* 섹션2 */
+.section2 {
+margin: 0 auto;
+max-width: 1900px;
+}
+
+.smallBox {
+display: flex;
+padding-left: 50px;
+/* border: 1px solid red; */
+}
+
+.smallBox img:hover {
+transform: translateY(-50px);
+}
+
+.smallBox img {
+width: 570px;
+height: 650px;
+margin-top: 100px;
+margin-left: 20px;
+transition: all 0.3s ease-out;
+
+cursor: pointer;
+}
+
+
+.smallp {
+display: flex;
+margin-top: 30px;
+padding-left: 40px;
+/* border: 2px solid royalblue; */
+}
+
+.smallp1 {
+width: 570px;
+height: 50px;
+margin-left: 30px;
+font-size: 2.1rem;
+border: 1px solid #7c7c7cc4;
+}
+
+.smallp1:hover {
+cursor: pointer;
+background-color: #999;
+}
+
+.smallp1 p {
+height: 50px;
+line-height: 50px;
+width: 100px;
+cursor: pointer;
+margin: 0 auto;
+align-items: center;
+justify-content: center;
+}
+
+.smallp2 {
+    width: 570px;
+height: 50px;
+margin-left: 20px;
+font-size: 2.1rem;
+border: 1px solid #7c7c7cc4;
+}
+
+.smallp2:hover {
+cursor: pointer;
+background-color: #999;
+}
+
+.smallp2 p {
+height: 50px;
+line-height: 50px;
+width: 100px;
+cursor: pointer;
+margin: 0 auto;
+align-items: center;
+justify-content: center;
+}
+
+.smallp3 {
+    width: 570px;
+height: 50px;
+margin-left: 20px;
+font-size: 2.1rem;
+border: 1px solid #7c7c7cc4;
+}
+
+
+.smallp3:hover {
+cursor: pointer;
+background-color: #999;
+}
+
+.smallp3 p {
+height: 50px;
+line-height: 50px;
+width: 100px;
+cursor: pointer;
+margin: 0 auto;
+align-items: center;
+justify-content: center;
+}
+
+/* 섹션3 */
+
+.section3 {
+margin: 0 auto;
+max-width: 1900px;
+}
+
+
+.smallBox2 {
+width: 100%;
+height: 230px;
+margin-top: 60px;
+background-color: #CED1D0;
+/* opacity: 0.5; */
+color: #fff;
+font-size: 2.5rem;
+font-family: 'SF_HambakSnow';
+font-weight: 700;
+
+overflow: hidden;
+/* position: relative; */
+}
+
+.smallBox2 p {
+
+padding: 80px;
+/* margin-top: 45px; */
+justify-content: center;
+align-items: center;
+
+transition: top 0.3s ease;
+
+}
+
+/* 섹션4 */
+.section4 {
+margin: 0 auto;
+max-width: 1900px;
+}
+
+
+.section4 h1 {
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+margin-top: 100px;
+width: 130px;
+font-size: 3.5rem;
+}
+
+
+.smallBox3 {
+display: flex;
+/* margin: 50px; */
+padding: 80px;
+justify-content: space-between;
+}
+
+.smallNew {
+margin-top: 20px;
+padding: 5px;
+font-size: 2.1rem;
+}
+
+.smallBox3 img {
+cursor: pointer;
+}
+
+
+
+.time {
+display: flex;
+padding-top: 20px;
+}
+
+.time i {
+font-size: 2.4rem;
+padding-top: 5px;
+width: 130px;
+justify-content: center;
+align-items: center;
+height: 40px;
+border-radius: 20px;
+color: #fff;
+position: absolute;
+background-color: #333;
+border: 1px solid #333;
+}
+
+.time p {
+margin-left: 80px;
+height: 40px;
+padding-left: 60px;
+font-size: 2.4rem;
+width: 250px;
+border-radius: 20px;
+border: 2px solid rgb(199, 201, 199);
+}
+
+/* 섹션5 */
+.section5 {
+margin: 0 auto;
+max-width: 1900px;
+}
+
+.smallBox4 {
+display: flex;
+justify-content: center;
+margin: 0 auto;
+}
+
+.smallBox4 img {
+padding: 40px;
+}
+
+.smallBox5 p {
+margin: 0 auto;
+width: 180px;
+font-size: 2.5rem;
+}
+
+/* 푸터 */
+.section6 {
+margin: 0 auto;
+max-width: 1900px;
+}
+
+.footer_span {
+
+padding: 40px 0px;
+font-size: 2.1rem;
+border-bottom: 1px solid #ccc;
+}
+
+.footer_span span {
+margin-left: 25px;
+/* border: 2px solid red; */
+}
+
+.footer_bg img {
+margin-top: 80px;
+margin-left: 10px;
+}
+
+.footer_span2 {
+margin-top: 40px;
+
+}
+
+.footer_span2 span {
+margin-left: 10px;
+}
+
+
+.footer_span3 {
+margin-top: 10px;
+margin-left: 10px;
+}
+</style>
 </head>
 
 <body>
-    <!-- 섹션1 -->
-    <section class="section1">
+<!-- 섹션1 -->
+<section class="section1">
 
-        <div class="mainImg">
-            <img src="../0924포트폴리오2/images/main2.jpg" alt="">
-        </div>
-        <header>
-            <h1 class="logo">
-                <img src="../0924포트폴리오2/images/logo.png" alt="">
-            </h1>
+<div class="mainImg">
+<img src="../0924포트폴리오2/images/main2.jpg" alt="">
+</div>
+<header>
+<h1 class="logo">
+<img src="../0924포트폴리오2/images/logo.png" alt="">
+</h1>
 
-            <div class="nav_bg"></div>
-            <nav id="gnb">
-                <ul class="main">
-                    <li>
-                        <a href="#">About us</a>
-                    </li>
-                    <li>
-                        <a href="#">New in</a>
-                    </li>
-                    <li>
-                        <a href="#">Product</a>
-                        <ul class="sub">
-                            <li>Furniture</li>
-                            <li>Clothing</li>
-                            <li>Walk</li>
-                            <li>Toy</li>
-                            <li>Starter set</li>
-                            <li>Refurb</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Board</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="join">
-                <a href="#">Login</a>
-                <a href="#">Join</a>
-            </div>
-        </header>
-    </section>
+<div class="nav_bg"></div>
+<nav id="gnb">
+<ul class="main">
+<li>
+<a href="#">About us</a>
+</li>
+<li>
+<a href="#">New in</a>
+</li>
+<li>
+<a href="#">Product</a>
+<ul class="sub">
+<li>Furniture</li>
+<li>Clothing</li>
+<li>Walk</li>
+<li>Toy</li>
+<li>Starter set</li>
+<li>Refurb</li>
+</ul>
+</li>
+<li>
+<a href="#">Board</a>
+</li>
+</ul>
+</nav>
+<div class="join">
+<a href="#">Login</a>
+<a href="#">Join</a>
+</div>
+</header>
+</section>
 
-    <!-- 섹션2 -->
-    <section class="section2">
+<!-- 섹션2 -->
+<section class="section2">
 
-        <div class="smallBox">
-            <img src="../0924포트폴리오2/images/section1.jpg" alt="">
-            <img src="../0924포트폴리오2/images/section2.jpg" alt="">
-            <img src="../0924포트폴리오2/images/section3.jpg" alt="">
-        </div>
+<div class="smallBox">
+<img src="../0924포트폴리오2/images/section1.jpg" alt="">
+<img src="../0924포트폴리오2/images/section2.jpg" alt="">
+<img src="../0924포트폴리오2/images/section3.jpg" alt="">
+</div>
 
-        <div class="smallp">
-            <div class="smallp1">
-                <p>Living</p>
-            </div>
-            <div class="smallp2">
-                <p>Walk</p>
-            </div>
-            <div class="smallp3">
-                <p>Clothing</p>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- 섹션3 -->
-    <section class="section3">
-        <div class="smallBox2">
-            <p>Small stuff is a life style brand for friends smaller than us. We design a small stuff that
-                makes dog comfortable, and an artistic object in your space.
-                We follow Scandinavian desigm tradition, characterised by enduring
-                aesthetic, functionality, craftmanship and an honest expression.</p>
-        </div>
-    </section>
+<div class="smallp">
+<div class="smallp1">
+<p>Living</p>
+</div>
+<div class="smallp2">
+<p>Walk</p>
+</div>
+<div class="smallp3">
+<p>Clothing</p>
+</div>
+</div>
+</section>
 
 
-    <!-- 섹션4 -->
-    <section class="section4">
-        <h1>NEW IN</h1>
-
-        <div class="smallBox3">
-            <div>
-                <img src="../0924포트폴리오2/images/img1.jpg" alt="">
-                <div class="smallNew">
-                    <p>MINI BUTTON PILLOW LEMONADE</p>
-                    <p>KRW 26,100</p>
-                </div>
-                <div class="time">
-                    <i class="fa-regular fa-clock">타임세일</i>
-                    <p>1일 11: 18: 53</p>
-                </div>
-            </div>
-            <div>
-                <img src="../0924포트폴리오2/images/img2.jpg" alt="">
-                <div class="smallNew">
-                    <p>MINI BUTTON PILLOW PINK STRIPE </p>
-                    <p>KRW 26,100</p>
-                </div>
-                <div class="time">
-                    <i class="fa-regular fa-clock">타임세일</i>
-                    <p>1일 11: 18: 53</p>
-                </div>
-            </div>
-            <div>
-                <img src="../0924포트폴리오2/images/img3.jpg" alt="">
-                <div class="smallNew">
-                    <p>MINI BUTTON PILLOW BLACK DOUBLE STRIPE</p>
-                    <p>KRW 26,100</p>
-                </div>
-                <div class="time">
-                    <i class="fa-regular fa-clock">타임세일</i>
-                    <p>1일 11: 18: 53</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- 섹션3 -->
+<section class="section3">
+<div class="smallBox2">
+<p>Small stuff is a life style brand for friends smaller than us. We design a small stuff that
+makes dog comfortable, and an artistic object in your space.
+We follow Scandinavian desigm tradition, characterised by enduring
+aesthetic, functionality, craftmanship and an honest expression.</p>
+</div>
+</section>
 
 
-    <!-- 섹션5 -->
-    <section class="section5">
-        <div class="smallBox4">
-            <div class="smallBox5">
-                <img src="images/img22.jpg" alt="">
-                <p>Lookbook</p>
-            </div>
+<!-- 섹션4 -->
+<section class="section4">
+<h1>NEW IN</h1>
 
-            <div class="smallBox5">
-                <img src="images/img33.jpg" alt="">
-                <p>Ambassadork</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- 푸터 -->
-
-    <footer class="section6">
-        <div class="footer_bg">
-            <p class="footer_span">
-                <span>회사소개</span>
-                <span>이용안내</span>
-                <span>이용약관</span>
-                <span>개인정보처리방침</span>
-            </p>
-            <img src="../0924포트폴리오2/images/logo.png" alt="">
-        </div>
-
-        <div>
-            <p class="footer_span2">
-                <span>상호: 주식회사 스몰스터프</span>
-                <span>대표: 오은준</span>
-                <span>전화: 010-6207-4509</span>
-            </p>
-
-            <p class="footer_span3">
-                <span>이메일: wan0706@hanmail.net</span>
-            </p>
-
-            <p>
-                <span class="footer_span3">
-                    (C) 주식회사 스몰스터프 all rights reserved. designed & managed by WISA
-                </span>
-            </p>
-        </div>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script>
-        // 내비게이션바
-        $('.main > li> a').mouseenter(function (e) {
-            e.preventDefault();
-            $('.sub').stop().slideDown(400);
-            $('.nav_bg').stop().animate({ height: 180 }, 400);
-        });
-        $('nav').mouseleave(function () {
-            $('.sub').stop().slideUp(400);
-            $('.nav_bg').stop().animate({ height: 0 }, 400);
-        });
+<div class="smallBox3">
+<div>
+<img src="../0924포트폴리오2/images/img1.jpg" alt="">
+<div class="smallNew">
+<p>MINI BUTTON PILLOW LEMONADE</p>
+<p>KRW 26,100</p>
+</div>
+<div class="time">
+<i class="fa-regular fa-clock">타임세일</i>
+<p>1일 11: 18: 53</p>
+</div>
+</div>
+<div>
+<img src="../0924포트폴리오2/images/img2.jpg" alt="">
+<div class="smallNew">
+<p>MINI BUTTON PILLOW PINK STRIPE </p>
+<p>KRW 26,100</p>
+</div>
+<div class="time">
+<i class="fa-regular fa-clock">타임세일</i>
+<p>1일 11: 18: 53</p>
+</div>
+</div>
+<div>
+<img src="../0924포트폴리오2/images/img3.jpg" alt="">
+<div class="smallNew">
+<p>MINI BUTTON PILLOW BLACK DOUBLE STRIPE</p>
+<p>KRW 26,100</p>
+</div>
+<div class="time">
+<i class="fa-regular fa-clock">타임세일</i>
+<p>1일 11: 18: 53</p>
+</div>
+</div>
+</div>
+</section>
 
 
+<!-- 섹션5 -->
+<section class="section5">
+<div class="smallBox4">
+<div class="smallBox5">
+<img src="images/img22.jpg" alt="">
+<p>Lookbook</p>
+</div>
 
-        // 마우스 휠 내리거나 올릴때 이벤트
-       
+<div class="smallBox5">
+<img src="images/img33.jpg" alt="">
+<p>Ambassadork</p>
+</div>
+</div>
+</section>
+
+<!-- 푸터 -->
+
+<footer class="section6">
+<div class="footer_bg">
+<p class="footer_span">
+<span>회사소개</span>
+<span>이용안내</span>
+<span>이용약관</span>
+<span>개인정보처리방침</span>
+</p>
+<img src="../0924포트폴리오2/images/logo.png" alt="">
+</div>
+
+<div>
+<p class="footer_span2">
+<span>상호: 주식회사 스몰스터프</span>
+<span>대표: 오은준</span>
+<span>전화: 010-6207-4509</span>
+</p>
+
+<p class="footer_span3">
+<span>이메일: wan0706@hanmail.net</span>
+</p>
+
+<p>
+<span class="footer_span3">
+(C) 주식회사 스몰스터프 all rights reserved. designed & managed by WISA
+</span>
+</p>
+</div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script>
+// 내비게이션바
+$('.main > li> a').mouseenter(function (e) {
+e.preventDefault();
+$('.sub').stop().slideDown(400);
+$('.nav_bg').stop().animate({ height: 180 }, 400);
+});
+$('nav').mouseleave(function () {
+$('.sub').stop().slideUp(400);
+$('.nav_bg').stop().animate({ height: 0 }, 400);
+});
 
 
-    </script>
+
+// 마우스 휠 내리거나 올릴때 이벤트
+
+
+
+
+</script>
 
 
 </body>
