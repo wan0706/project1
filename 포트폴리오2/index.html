@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mintree</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=EB+Garamond:ital,wght@1,600&family=Great+Vibes&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&display=swap" rel="stylesheet">
+
+    <style>
+
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+           width: 100%;
+            vertical-align: top;
+        }
+
+        .section1 {
+            width: 1920px;
+            position: relative;
+            margin: 0 auto;
+            height: 77vh;
+            border: 1px solid red;
+        }
+
+        .header {
+            position: absolute;
+            display: flex;
+            width: 100%;
+        }
+
+        .logo {
+            z-index: 9;
+            padding: 50px;
+        }
+
+        .nav_bg {
+            position: absolute;
+            left: 0px;
+            top: 180px;
+            width: 100%;
+        }
+
+        .gnb {
+            z-index: 9;
+            position: relative;
+            /* height: 100px; */
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            margin-left: 50px;
+            padding-top: 20px;
+            /* padding: 20px; */
+            /* border: 2px solid red; */
+        }
+
+        .main > li {
+            width: 160px;
+            /* text-align: center; */
+            padding-left: 30px;
+        }
+
+       
+        .main > li > a {
+            position: relative;
+            display: inline-block;
+            /* padding: 5px 0; */
+            line-height: 30px;
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: #BBDF94;
+            /* border: 1px solid rebeccapurple; */
+        }
+        
+
+        .main > li > a:hover {
+            color: #8d1b1b;
+        }
+
+        .main > li > a::after {
+            content: "";
+            position: absolute;
+            bottom: 50px;
+            transform: scaleX(0);
+            transition: 0.3s;
+            width: 100%;
+            /* border: 1px solid rgb(38, 0, 255); */
+        }
+        
+        .sub {
+            padding-top: 30px;
+        }
+
+        .sub > li {
+            padding-top: 10px;
+        }
+        
+        .sub > li > a {
+            color: #BBDF94;
+            
+        }
+
+        .member {
+            z-index: 9;
+           margin-top: 30px;
+            position: absolute;
+            right: 70px;
+            /* border: 1px solid rgb(0, 204, 255); */
+        }
+        
+        .member > a {
+            font-size: 1.8rem;
+            color: #BBDF94;
+            padding-left: 20px;
+
+        }
+        
+
+        /* 캐로셀 슬라이드 */
+       .slideWrap {
+        position: absolute;
+        left: 10%;
+        top: 10%;
+        transform: translate(-10%,-10%);
+        width:100%;
+        overflow: hidden;
+       }
+
+       .frame {
+            overflow: hidden;
+       }
+
+       .slider {
+        display: flex;
+        position: relative;
+       }
+
+
+       .slider.on {
+        transition: 0.3s;
+       }
+
+       /* 메인 텍스트 */
+       .mainText {
+        position: relative;
+        width:600px;
+        bottom: 300px;
+        margin: 0 auto;
+        justify-content: center;
+      
+    }
+    
+    .mainText .text1 {
+        padding: 10px;
+        margin: 0 auto;
+        color: #C9D4B2;
+        font-size: 4.5rem;
+        font-family: 'EB Garamond', serif;
+       }
+
+       .mainText .text2 {
+        width: 270px;
+        padding: 10px;
+        margin: 0 auto;
+        /* border: 2px solid red; */
+        justify-content: center;
+        /* padding-left: 70px; */
+        color: #C9D4B2;
+        font-size: 1.7rem;
+       }
+
+       .mainText .text3 {
+        width: 300px;
+        padding:10px;
+        margin: 0 auto;
+        /* border: 2px solid red; */
+        justify-content: center;
+        /* padding-left: 70px; */
+        color: #C9D4B2;
+        font-size: 1.7rem;
+       }
+
+       /* 섹션2 */
+       .section2 {
+        position: relative;
+        top: 320px;
+        width: 1920px;
+        height: 77vh;
+        margin: 0 auto;
+        border: 2px solid rgb(0, 132, 255);
+       }
+
+       .bestH2 {
+        /* padding: 40px; */
+        width: 400px;
+        margin: 0 auto;
+
+    }
+    
+    .bestH2 h2 {
+        width:400px;
+        padding-left: 100px;
+        font-size: 2.5rem;
+        color: #3F5C52;
+        font-family: 'EB Garamond', serif;
+       }
+
+       .bestH2 p {
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        color: #3F5C52;
+        width: 400px;
+        left: 0;
+      
+       }
+
+       .product {
+        display: flex;
+       }
+
+       .product img {
+        width: 600px;
+       }
+
+
+</style>
+</head>
+<body>
+    <!-- 메인 -->
+    <!-- 헤더 -->
+   
+        <div class="section1">
+            <header class="header">
+                <h1 class="logo"><a href="#"><img src="/포트폴리오2/images/logo1.svg" alt=""></a></h1>
+                <div class="nav_bg"></div>
+
+                <nav class="gnb">
+                   <ul class="main">
+                        <li>
+                            <a href="#">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="#">SHOP</a>
+                        </li>
+                        <li>
+                            <a href="#">BOARD</a>
+                                <ul class="sub">
+                                    <li><a href="#">NOTICE</a></li>
+                                    <li><a href="#">Q&A</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                </ul>
+                        </li>
+                   </ul>
+                </nav>
+
+                <div class="member">
+                    <a href="#">CART (0)</a>
+                    <a href="#">LOGIN</a>
+                </div>
+            </header>
+
+            <!-- 케로셀 -->
+                <div class="slideWrap">
+                        <ul class="slider">
+                            <li><img src="/포트폴리오2/images/main1.jpg" alt="이미지1"></li>
+                            <li><img src="/포트폴리오2/images/main2.jpg" alt="이미지2"></li>
+                            <li><img src="/포트폴리오2/images/main3.jpg" alt="이미지3"></li>
+                        </ul>
+
+                        <div class="mainText">
+                            <p class="text1">Care for Tomorrow</p>
+                            <p class="text2">더 나은 내일을 위한</p>
+                            <p class="text3">헤어 스파 루틴, 민트리</p>
+                        </div>
+                </div>
+
+    </div>
+
+    <!-- 섹션2 -->
+    <div class="section2">
+        <div class="bestH2">
+            <h2>Best Sellers</h2>
+            <p>민트리의 베스트 상품을 소개합니다.</p>
+        </div>
+
+        <!-- <div class="product">
+            <ul>
+                <img src="../포트폴리오2/images/product1.jpg" alt="">
+                <img src="../포트폴리오2/images/product2.jpg" alt="">
+            </ul>
+        </div> -->
+    </div>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+
+// 네비게이션바
+$('.main > li > a').mouseenter(function(e){
+    e.preventDefault();
+    $('.sub').stop().slideDown(400);
+    $('.nav_bg').stop().animate({height: 180}, 400);
+});
+
+$('nav').mouseleave(function(){
+    $('.sub').stop().slideUp(400);
+    $('.nav_bg').stop().animate({height: 0}, 400);
+});
+
+
+
+
+// 케로셀
+        const slider = $('.slider'),
+            sliderItem = $('.slider').find('li'),
+            sliderItemWidth = 100,
+            sliderItemCount = sliderItem.length + 2;
+        let num = 1;
+
+
+        slider.width(`${sliderItemWidth * sliderItemCount}%`);
+        sliderItem.width(`${sliderItemWidth}%`);
+        // 슬라이드 처음 위치
+        slider.css({ left: `${-1 * sliderItemWidth}%`});
+
+        const sliderFitstItem = slider.find('li:first-of-type');
+        const sliderLastItem = slider.find('li:last-of-type');
+        sliderLastItem.clone().prependTo(slider);
+        sliderFitstItem.clone().appendTo(slider);
+
+        function slide() {
+            num++;
+            if(num > sliderItem.length) {
+                num = 1;
+                slider.removeClass('on');
+                moveSlide(num - 1);
+            }
+            setTimeout(function () {
+                slider.addClass('on');
+                moveSlide(num);
+            }, 100);
+        }
+
+        function moveSlide(cnt) {
+            let posX = cnt * sliderItemWidth * -1;
+            slider.css({ left: posX + '%'});
+            return false;
+        }
+
+        setInterval(slide, 2000);
+    </script>
+</body>
+</html>
